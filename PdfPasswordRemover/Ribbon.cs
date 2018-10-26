@@ -1,8 +1,10 @@
 ﻿using Microsoft.Office.Core;
 using Microsoft.Office.Interop.Outlook;
+using PdfPasswordRemover.Properties;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Reflection;
@@ -45,6 +47,16 @@ namespace PdfPasswordRemover
         public string GetCustomUI(string ribbonID)
         {
             return GetResourceText("PdfPasswordRemover.Ribbon.xml");
+        }
+
+        public Bitmap GetPwdIcon(IRibbonControl control)
+        {
+            return Resources.PwdPng;
+        }
+
+        public Bitmap GetUnlockIcon(IRibbonControl control)
+        {
+            return Resources.UnlockPng;
         }
 
         #endregion

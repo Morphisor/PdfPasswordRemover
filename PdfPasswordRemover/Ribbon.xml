@@ -4,8 +4,8 @@
         <tabs>
             <tab id="PdfPasswordRemover" label="PdfPasswordRemover">
                 <group id="grp">
-                    <button id="RemovePasswordBtn" onAction="OnRemovePwd" label="Remove Password" size="large" />
-                    <button id="SetPasswordBtn" onAction="OnSetPwd" label="Set Password" size="large" />
+                    <button id="RemovePasswordBtn" onAction="OnRemovePwd" label="Remove Password" size="large" getImage="GetUnlockIcon" />
+                    <button id="SetPasswordBtn" onAction="OnSetPwd" label="Set Password" size="large" getImage="GetPwdIcon" />
                 </group>
             </tab>
         </tabs>

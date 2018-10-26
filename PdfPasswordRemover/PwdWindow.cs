@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PdfPasswordRemover.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -20,6 +21,7 @@ namespace PdfPasswordRemover
             FormBorderStyle = FormBorderStyle.FixedSingle;
             MaximizeBox = false;
             MinimizeBox = false;
+            Icon = Resources.pwd;
 
             _pwdManager = PwdManager.Instance;
         }
